@@ -96,22 +96,7 @@
 # {'type': 'cm_matrix', 'dataset': 'test', 'true_0': {"predicted_0": 15562, "predicte_1": 650}, 'true_1': {"predicted_0": 2490, "predicted_1": 1420}}
 #
 
-"""
-Script de entrenamiento de un modelo SVM para predecir el default de tarjetas de crédito.
 
-El proceso consiste en:
-1. Cargar y depurar los datos de entrenamiento y prueba desde archivos ZIP.
-2. Definir un pipeline de preprocesamiento y un modelo.
-3. Realizar una búsqueda de hiperparámetros con GridSearchCV.
-4. Entrenar el mejor modelo encontrado.
-5. Evaluar el modelo con métricas y matrices de confusión.
-6. Guardar el modelo entrenado y las métricas de evaluación.
-"""
-
-"""
-Entrenamiento de un modelo SVM para predecir el default de pago 
-en tarjetas de crédito.
-"""
 import json, gzip, os, pickle, zipfile
 from pathlib import Path
 import pandas as pd
